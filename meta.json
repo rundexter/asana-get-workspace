@@ -3,24 +3,18 @@
  */
 {
     //Required. Inputs the module expects.
-    "inputs": [
-        //e.g.
-        /*
-        {
-            "id": "from",
-            "title":"From"
-        }
-        */
-    ],
+    "inputs": [{
+        "id"          : "filter_name",
+        "title"       : "Name Filter",
+        "description" : "The workspace name to filter by"
+    }],
     //Required. Outputs the module emits.
-    "outputs": [
-      //e.g.
-      /*
-        {
-            "id": "from",
-            "title":"From"
-        }
-      */
-    ],
-    "title": "Asana Get Workspace" /* Required.A display name for the module */
+    "outputs": [{
+        "id"    : "id",
+        "title" : "Workspace ID"
+    }, {
+        "id"    : "name",
+        "title" : "Workspace Name"
+    }],
+    "title": "Asana Get Workspaces" /* Required.A display name for the module */
 }
